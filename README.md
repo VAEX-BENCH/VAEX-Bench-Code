@@ -7,7 +7,7 @@ Clone the repository and install the required packages:
 ```bash
 git clone https://github.com/VAEX-BENCH/VAEX-Bench.git
 cd VAEX-Bench
-pip install -r requirements.txt
+pip install -r requirements.txt \\
 
 ## Dataset Loading
 
