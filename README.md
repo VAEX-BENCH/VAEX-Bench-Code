@@ -22,29 +22,28 @@ from datasets import load_dataset
 dataset = load_dataset("VAEX-BENCH/VAEX-Bench")
 print(dataset)
 ```
+
 ## Evaluation
 
-This code is provided to reproduce the main evaluation results reported in Table 2 of the paper. We provide two evaluation scripts depending on how the target model is accessed.
+The evaluation code reproduces the main results in Table 2 of the paper. We provide two inference scripts.
 
-### API-based models
+### API Inference
 
-Use `api_infer.sh` for models accessed through external APIs, including GPT, Gemini, Claude, and OpenRouter-hosted models such as Mistral, Gemma, and GLM.
-
-```bash
-bash api_infer.sh
-```
-
-This script runs inference on VAEX-Bench QA pairs and saves the model responses for API-based models.
-
-### Locally served video models
-
-Use `video_infer.sh` for open-source video MLLMs that are served locally, including Qwen and InternVL models.
+`api_infer.sh` is used for API-based models: GPT, Gemini, Claude, and OpenRouter models such as Mistral, Gemma, and GLM.
 
 ```bash
-bash video_infer.sh
+sh api_infer.sh
 ```
 
-This script runs video-based inference on the VAEX-Bench videos and saves the model responses for locally served models.
+### Video Model Inference
+
+`video_infer.sh` is used for locally served open-source video MLLMs, including Qwen and InternVL models. These models require GPU resources, and the required number and memory of GPUs may vary depending on the model size.
+
+```bash
+sh video_infer.sh
+```
+
+The scripts save model responses for each video-question pair. The saved outputs are used to compute extractive and abstractive task accuracies for reproducing Table 2.
 
 ### Outputs
 
