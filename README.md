@@ -1,6 +1,6 @@
 # VAEX-Bench-Code
 
-This repository is prepared for the NeurIPS Evaluations and Datasets Track code submission. All dataset names, paths, metadata, and code components have been anonymized for the review process.
+This repository is prepared for the NeurIPS Evaluations and Datasets Track code submission. All dataset names, paths, metadata, and code components have been anonymized for the double-blind review process.
 
 ## Installation
 
