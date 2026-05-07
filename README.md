@@ -43,8 +43,6 @@ sh api_infer.sh
 sh video_infer.sh
 ```
 
-The scripts save model responses for each video-question pair. The saved outputs are used to compute extractive and abstractive task accuracies for reproducing Table 2.
-
 ### Outputs
 
 The inference results are saved in the output directory specified in each script. Each output file contains the model answer for each video-question pair, along with the corresponding task type and reasoning regime (`extractive` or `abstractive`). These outputs can be used to compute the task-wise and average accuracies reported in the main results table.
